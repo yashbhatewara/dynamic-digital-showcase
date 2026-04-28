@@ -33,14 +33,14 @@ export const Pipeline = () => {
             {steps.map((s) => (
               <div key={s.n} className="flex flex-col items-center text-center">
                 <div className="relative">
-                  <div className="w-[120px] h-[120px] rounded-2xl border border-border bg-card/60 backdrop-blur-sm flex items-center justify-center shadow-[inset_0_1px_0_hsl(0_0%_100%/0.04)]">
-                    <s.icon className="w-9 h-9 text-primary" strokeWidth={1.5} />
+                  <div className="w-[88px] h-[88px] md:w-[120px] md:h-[120px] rounded-2xl border border-border bg-card/60 backdrop-blur-sm flex items-center justify-center shadow-[inset_0_1px_0_hsl(0_0%_100%/0.04)]">
+                    <s.icon className="w-7 h-7 md:w-9 md:h-9 text-primary" strokeWidth={1.5} />
                   </div>
                   <span className="absolute -top-2 -right-2 w-8 h-8 rounded-full bg-background border border-border flex items-center justify-center font-mono-ui text-[11px] text-muted-foreground">
                     {s.n}
                   </span>
                 </div>
-                <div className="mt-6 font-display font-semibold text-xl">{s.title}</div>
+                <div className="mt-4 md:mt-6 font-display font-semibold text-base md:text-xl">{s.title}</div>
                 <div className="mt-1 font-mono-ui text-xs tracking-wider text-muted-foreground">{s.sub}</div>
               </div>
             ))}
