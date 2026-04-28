@@ -42,17 +42,17 @@ const projects: Project[] = [
 ];
 
 const ProjectCard = ({ n }: { n: string }) => (
-  <div className="relative aspect-[4/3] md:aspect-auto md:h-full min-h-[420px] rounded-2xl border border-border overflow-hidden bg-gradient-to-br from-card via-card to-[hsl(165_40%_10%)]">
+  <div className="relative aspect-[4/3] md:aspect-auto md:h-full min-h-[260px] sm:min-h-[340px] md:min-h-[420px] rounded-2xl border border-border overflow-hidden bg-gradient-to-br from-card via-card to-[hsl(165_40%_10%)]">
     <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_left,hsl(41_60%_50%/0.15),transparent_60%)]" />
-    <div className="absolute top-6 left-6 font-mono-ui text-xs tracking-[0.25em] text-muted-foreground">
+    <div className="absolute top-4 left-4 md:top-6 md:left-6 font-mono-ui text-[10px] md:text-xs tracking-[0.25em] text-muted-foreground">
       {n === "01" ? "FEATURED" : "PROJECT"}
     </div>
     <div className="absolute inset-0 flex items-center justify-center">
-      <span className="font-display font-bold text-[200px] md:text-[260px] leading-none text-foreground/[0.06]">
+      <span className="font-display font-bold text-[120px] sm:text-[160px] md:text-[260px] leading-none text-foreground/[0.06]">
         {n}
       </span>
     </div>
-    <div className="absolute bottom-6 right-6 font-mono-ui text-xs tracking-[0.2em] text-muted-foreground">
+    <div className="absolute bottom-4 right-4 md:bottom-6 md:right-6 font-mono-ui text-[10px] md:text-xs tracking-[0.2em] text-muted-foreground">
       {n} / 02
     </div>
   </div>
