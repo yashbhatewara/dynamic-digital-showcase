@@ -5,7 +5,11 @@ export const Hero = () => {
   return (
     <section id="top" className="relative min-h-screen flex items-center overflow-hidden">
       <div className="absolute inset-0 grid-bg opacity-30" aria-hidden />
-      <NeuronNetwork />
+      {/* Neuron animation constrained to right side only */}
+      <div className="absolute inset-y-0 right-0 w-full md:w-1/2 pointer-events-none" aria-hidden>
+        <NeuronNetwork />
+        <div className="absolute inset-y-0 left-0 w-24 bg-gradient-to-r from-background to-transparent" />
+      </div>
       <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-background pointer-events-none" aria-hidden />
 
       <div className="container relative z-10 pt-32 pb-24">
@@ -14,11 +18,11 @@ export const Hero = () => {
           OPEN TO AI/ML OPPORTUNITIES
         </div>
 
-        <h1 className="font-display font-semibold text-[clamp(2.75rem,8vw,7rem)] leading-[1.02] tracking-tight max-w-[18ch] text-headline animate-fade-up">
+        <h1 className="font-display font-semibold text-[clamp(2rem,5vw,4.5rem)] leading-[1.05] tracking-tight max-w-[20ch] text-headline animate-fade-up">
           Building AI systems that actually work in production.
         </h1>
 
-        <p className="mt-8 max-w-xl text-lg text-muted-foreground animate-fade-up">
+        <p className="mt-6 max-w-xl text-base md:text-lg text-muted-foreground animate-fade-up">
           AI/ML Engineer focused on MLOps, deployment, and scalable pipelines.
         </p>
 
