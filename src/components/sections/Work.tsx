@@ -39,33 +39,6 @@ const projects: Project[] = [
     github: "https://github.com/yashbhatewara/MLOps_Project_2",
     reverse: true,
   },
-  {
-    n: "03",
-    label: "PROJECT 03",
-    title: "End-to-End MLOps Pipeline",
-    tagline: "Production-grade framework to build, track and deploy models reproducibly.",
-    bullets: [
-      "YAML-driven config with DVC for full data and model versioning with end-to-end auditability",
-      "MLflow + DagsHub for remote experiment collaboration; AWS S3 for pipeline artifacts",
-      "Cuts ML development cycle by 40% through structured experiment tracking",
-    ],
-    stack: ["Python", "MLflow", "DVC", "DagsHub", "AWS S3", "YAML"],
-    github: "https://github.com/yashbhatewara/PROJECT_ON_COMPLETE_ML_PIPELINE",
-  },
-  {
-    n: "04",
-    label: "PROJECT 04",
-    title: "Kubernetes Microservice Orchestration",
-    tagline: "Resilient, horizontally scalable microservice deployment on Kubernetes.",
-    bullets: [
-      "Containerised services on Minikube with service discovery and load balancing across pods",
-      "Rolling updates via kubectl for zero-downtime deploys — release cycles cut from days to hours",
-      "Validated inter-service communication and load distribution end-to-end via Postman",
-    ],
-    stack: ["Kubernetes", "Minikube", "Docker", "Postman", "Kubectl"],
-    github: "https://github.com/yashbhatewara/K8S_Project",
-    reverse: true,
-  },
 ];
 
 const ProjectCard = ({ n }: { n: string }) => (
@@ -80,7 +53,7 @@ const ProjectCard = ({ n }: { n: string }) => (
       </span>
     </div>
     <div className="absolute bottom-6 right-6 font-mono-ui text-xs tracking-[0.2em] text-muted-foreground">
-      {n} / 04
+      {n} / 02
     </div>
   </div>
 );
