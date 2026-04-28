@@ -44,7 +44,7 @@ export const Hero = () => {
           </a>
         </div>
 
-        <div className="absolute left-4 right-4 bottom-8 flex justify-between font-mono-ui text-xs tracking-widest text-muted-foreground/70">
+        <div className="absolute left-4 right-4 bottom-6 hidden sm:flex justify-between font-mono-ui text-[10px] md:text-xs tracking-widest text-muted-foreground/70">
           <span>YASH BHATEWARA · INDORE, IN</span>
           <span>PORTFOLIO · 2026</span>
         </div>

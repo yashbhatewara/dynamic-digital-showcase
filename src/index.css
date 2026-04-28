@@ -55,7 +55,9 @@
     font-family: 'Inter', system-ui, sans-serif;
     background-image: radial-gradient(ellipse at top, hsl(41 40% 10% / 0.4), transparent 60%);
     background-attachment: fixed;
+    overflow-x: hidden;
   }
+  html { overflow-x: hidden; }
   h1, h2, h3, h4 {
     font-family: 'Space Grotesk', system-ui, sans-serif;
     letter-spacing: -0.02em;
