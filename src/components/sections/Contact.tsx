@@ -22,7 +22,7 @@ export const Contact = () => {
             <ArrowUpRight className="w-4 h-4 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
           </a>
           <a
-            href="https://www.linkedin.com/"
+            href="https://www.linkedin.com/in/yash-bhatewara-5b084a214"
             target="_blank"
             rel="noreferrer"
             className="inline-flex items-center gap-2 px-6 py-3.5 rounded-full border border-border bg-card/40 hover:bg-card transition-colors"

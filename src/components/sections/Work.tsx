@@ -15,28 +15,55 @@ const projects: Project[] = [
   {
     n: "01",
     label: "FEATURED PROJECT",
-    title: "Vehicle Insurance ML Pipeline",
-    tagline: "Production-grade ML system shipped end-to-end on AWS.",
+    title: "Vehicle Insurance Risk Prediction",
+    tagline: "Full-stack production ML app deployed end-to-end on AWS.",
     bullets: [
-      "End-to-end pipeline: MongoDB ingestion → validation → training → deployment",
-      "CI/CD with GitHub Actions, Docker containerisation, AWS S3 / ECR / EC2",
-      "Real-time prediction service exposed via web interface",
+      "Modular pipeline: ingestion → validation → transformation → training → evaluation via Flask API",
+      "Deployed on AWS EC2 with Docker; CI/CD via GitHub Actions cut deploy time by 75%",
+      "AWS S3 model registry with automated version selection enables live A/B testing",
     ],
-    stack: ["Python", "MongoDB", "Scikit-learn", "Docker", "AWS", "GitHub Actions"],
-    github: "https://github.com/yashbhatewara",
+    stack: ["Python", "Flask", "MongoDB Atlas", "AWS", "Docker", "GitHub Actions", "MLflow"],
+    github: "https://github.com/yashbhatewara/MLops_Project1",
   },
   {
     n: "02",
     label: "PROJECT 02",
-    title: "Real Estate Price Prediction",
-    tagline: "Regression models for property pricing with full feature pipeline.",
+    title: "Real Estate Price Intelligence System",
+    tagline: "Dual-model pricing tool over 69K Abu Dhabi real estate listings.",
     bullets: [
-      "Cleaned and engineered features from real-world property datasets",
-      "Compared multiple regression algorithms to select the best performer",
-      "Evaluated with cross-validation and residual analysis",
+      "89.6% R² for rent prediction (RMSE: AED 2,090) and 87.3% price-tier accuracy",
+      "Feature engineering with log transforms and target encoding boosted performance by 35%",
+      "Interactive Plotly geospatial map surfaces ML predictions as a user-facing interface",
     ],
-    stack: ["Python", "Pandas", "Scikit-learn"],
-    github: "https://github.com/yashbhatewara",
+    stack: ["Python", "XGBoost", "Random Forest", "MLflow", "Plotly", "Scikit-learn"],
+    github: "https://github.com/yashbhatewara/MLOps_Project_2",
+    reverse: true,
+  },
+  {
+    n: "03",
+    label: "PROJECT 03",
+    title: "End-to-End MLOps Pipeline",
+    tagline: "Production-grade framework to build, track and deploy models reproducibly.",
+    bullets: [
+      "YAML-driven config with DVC for full data and model versioning with end-to-end auditability",
+      "MLflow + DagsHub for remote experiment collaboration; AWS S3 for pipeline artifacts",
+      "Cuts ML development cycle by 40% through structured experiment tracking",
+    ],
+    stack: ["Python", "MLflow", "DVC", "DagsHub", "AWS S3", "YAML"],
+    github: "https://github.com/yashbhatewara/PROJECT_ON_COMPLETE_ML_PIPELINE",
+  },
+  {
+    n: "04",
+    label: "PROJECT 04",
+    title: "Kubernetes Microservice Orchestration",
+    tagline: "Resilient, horizontally scalable microservice deployment on Kubernetes.",
+    bullets: [
+      "Containerised services on Minikube with service discovery and load balancing across pods",
+      "Rolling updates via kubectl for zero-downtime deploys — release cycles cut from days to hours",
+      "Validated inter-service communication and load distribution end-to-end via Postman",
+    ],
+    stack: ["Kubernetes", "Minikube", "Docker", "Postman", "Kubectl"],
+    github: "https://github.com/yashbhatewara/K8S_Project",
     reverse: true,
   },
 ];
@@ -53,7 +80,7 @@ const ProjectCard = ({ n }: { n: string }) => (
       </span>
     </div>
     <div className="absolute bottom-6 right-6 font-mono-ui text-xs tracking-[0.2em] text-muted-foreground">
-      {n} / 02
+      {n} / 04
     </div>
   </div>
 );
