@@ -116,23 +116,22 @@
 }
 .animate-pulse-dot { animation: pulse-dot 2s ease-in-out infinite; }
 
-/* About section shimmer: white → champagne sweep, left to right */
+/* About section shimmer: continuous white ↔ champagne ↔ white, left to right */
 @keyframes about-shimmer {
-  0%   { background-position: 200% 50%; }
-  100% { background-position: -100% 50%; }
+  0%   { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
 }
 .about-shimmer {
   background-image: linear-gradient(
     90deg,
     hsl(210 25% 95%) 0%,
-    hsl(210 25% 95%) 35%,
-    hsl(45 85% 72%) 50%,
-    hsl(41 70% 62%) 60%,
-    hsl(210 25% 95%) 75%,
+    hsl(45 85% 72%) 25%,
+    hsl(210 25% 95%) 50%,
+    hsl(45 85% 72%) 75%,
     hsl(210 25% 95%) 100%
   );
-  background-size: 250% 100%;
-  background-repeat: no-repeat;
+  background-size: 200% 100%;
+  background-repeat: repeat;
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
